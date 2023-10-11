@@ -1,0 +1,14 @@
+.Body {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+
+    .FilterSideBar {
+        width: 250px;
+        flex-shrink: 0; // Prevents the FilterSideBar from shrinking
+    }
+    .ProductList {
+        flex-grow: 1;
+    }
+}
+

@@ -1,0 +1,120 @@
+/* src/components/HomePage.css */
+
+#home-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh; 
+    overflow-y: hidden;  
+    background-color: rgb(70, 67, 67);
+    background-image: url('https://img.freepik.com/premium-photo/sale-offer-black-friday-shopping-discount-closeup-woman-hand-holding-purchase-bags-isolated-orange-empty-space-background_279525-17960.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;     
+      background-attachment: fixed; 
+    background-position: center;
+    overflow: hidden; 
+
+    input {
+        padding: 10px 20px;
+        font-size: 16px;
+        position: absolute;
+        top: 15%;
+        left: 30%;
+    }
+    .trending-suggestions {
+        width: 60%; 
+        height: 50vh;
+        margin: 0 auto; // centers the container horizontally
+        padding: 20px;
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+        background-color: #f9f9f9; // Light gray background (optional)
+        border-radius: 10px;      
+        p {
+          font-weight: bold;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+      
+        .card {
+          flex: 1;
+          width: calc(33.3333% - 10px); // three cards minus a little for spacing
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid #e0e0e0;
+          border-radius: 4px;
+        //   padding: 10px;
+          margin: 0 5px; // adds spacing between the cards
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          height: 38vh;
+          .card-image {
+            width: 70%; 
+            height: 30vh; 
+            border-radius: 8px;
+            margin-bottom: 10px;
+          }
+      
+          h3 {
+            margin: 0;
+            text-align: center;
+          }
+      
+          p {
+            margin: 0;
+            text-align: center;
+            font-weight: 500;
+          }
+      
+          &:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+          }
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .trending-suggestions {
+          .card {
+            width: 100%;
+            margin: 10px 0;
+          }
+        }
+      }
+      
+    .trending-suggestions {
+        position: absolute;
+        top: 60px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+
+    .trending-suggestions div {
+        padding: 5px 0;
+    }
+
+    .next {
+        position: fixed;
+        top: 15%;
+        left: 65%;
+        height: 5vh;
+    }
+    .homelogo{
+        position: absolute;
+        right: 3%;
+        top: 5%;
+    }
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
+

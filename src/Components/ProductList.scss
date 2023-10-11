@@ -1,0 +1,66 @@
+.productListContainer {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); // A cleaner way to create a 3-column grid
+    gap: 20px; // Better handling of space between grid items
+    padding-left: 24rem;
+    
+    padding-top: 10rem;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    transition: background-color 0.3s;
+    width: 17rem;
+    cursor: pointer;
+    position: relative; // because the wishlist icon is positioned absolutely
+       
+    &:hover .view-product {
+        // background-color: #f6f6f6;
+        visibility: visible;
+
+    }
+    .image-container {
+        width: 100%; 
+        height: 30vh;
+        position: relative; // Added to ensure correct stacking context
+    
+        img {
+            width: 100%; // Set to full width of the container
+            height: 100%; // Set to full height of the container
+            object-fit: cover; // Image will cover the container
+        }
+    }
+
+    .content {
+        padding-left: 1rem;
+        height: 10vh;
+        position:relative;  // Set the height to 25% of the viewport height
+    
+        h2, p {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }     
+       
+    }
+    .wishlist {
+        position: absolute;
+        bottom: 300px;// Added some spacing to ensure it doesn't touch the container's edge
+        right: 10px; 
+    }
+    .view-product {
+        width: 270px;
+        position: absolute;
+        right: 0px;
+        bottom: 147px;
+        background-color: rgba(0, 0, 255, 0.6);
+        visibility: hidden;
+    }
+    button {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        width: 100%;
+        cursor: pointer;    
+    }
+}
