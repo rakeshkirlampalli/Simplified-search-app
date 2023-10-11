@@ -1,14 +1,13 @@
 div {
     margin-bottom: 2rem;
+    width: 100%;
 }
-
 div input[type="text"] {
     padding: 0.5rem;
     font-size: 1rem;
     border-radius: 0.25rem;
     width: 550px;
 }
-
 div button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -23,30 +22,29 @@ div button {
 div button:hover {
     background-color: #0056b3;
 }
-
 .nav {
     display: flex;
     z-index: 1000;
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 2rem 0;
+    padding: 1rem 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
 }
-
+.imgdiv{
+    width: 15%;
+}
 .nav .imgdiv {
     position: absolute;
     right: 30px;
-    top: 10%;
+    top: 7%;
 }
-
 .nav .imgdiv img:focus {
     outline: none; /* Remove blue outline when the image is clicked or focused */
 }
-
 html, body {
     margin: 0;
     padding: 0;

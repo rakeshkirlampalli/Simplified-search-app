@@ -2,10 +2,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px; // adjust this to whatever width you want for the sidebar
-    height: 90vh; // makes it fill the full height of the viewport
+    width: 30%; // adjust this to whatever width you want for the sidebar
+    height: 100vh; // makes it fill the full height of the viewport
     padding: 1rem;
-    padding-top: 8rem;
+    padding-top: 5rem;
     // background-color: #f7f7f7; // light gray, but you can change this
     border-right: 1px solid #ddd; // a light border on the right to distinguish it from the content
     overflow-y: auto; // to allow scrolling if the content exceeds the viewport height

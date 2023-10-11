@@ -13,7 +13,6 @@ export const FilterSideBar: React.FC<FilterProps> = ({ onFilterChange }) => {
     const [prices, setPrices] = useState<{ [key: string]: boolean }>({
         '50-100': false,
         '100 - 200': false,
-        '300 - 500': false,
         '500 - 1000': false,
     });
 

@@ -9,16 +9,16 @@
     background-image: url('https://img.freepik.com/premium-photo/sale-offer-black-friday-shopping-discount-closeup-woman-hand-holding-purchase-bags-isolated-orange-empty-space-background_279525-17960.jpg');
     background-repeat: no-repeat;
     background-size: cover;     
-      background-attachment: fixed; 
+    background-attachment: fixed; 
     background-position: center;
     overflow: hidden; 
 
     input {
-        padding: 10px 20px;
+        // padding: 2px;
         font-size: 16px;
         position: absolute;
         top: 15%;
-        left: 30%;
+        left: 25%;
     }
     .trending-suggestions {
         width: 60%; 
@@ -103,7 +103,7 @@
         position: fixed;
         top: 15%;
         left: 65%;
-        height: 5vh;
+        height: 5.5vh;
     }
     .homelogo{
         position: absolute;

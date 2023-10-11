@@ -1,10 +1,10 @@
 .productListContainer {
     font-family: Arial, sans-serif;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); // A cleaner way to create a 3-column grid
+    grid-template-columns: repeat(3, 1fr); // A cleaner way to create a 3-column grid
     gap: 20px; // Better handling of space between grid items
-    padding-left: 24rem;
-    
+    padding-left: 22rem;
+    width: 70%;
     padding-top: 10rem;
 }
 
@@ -45,14 +45,14 @@
     }
     .wishlist {
         position: absolute;
-        bottom: 300px;// Added some spacing to ensure it doesn't touch the container's edge
+        bottom: 120px;// Added some spacing to ensure it doesn't touch the container's edge
         right: 10px; 
     }
     .view-product {
         width: 270px;
         position: absolute;
         right: 0px;
-        bottom: 147px;
+        bottom: 120px;
         background-color: rgba(0, 0, 255, 0.6);
         visibility: hidden;
     }
